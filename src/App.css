@@ -1,4 +1,3 @@
-/* Existing styles */
 .outer-container {
   width: 100vw;
   height: 100vh;
@@ -61,7 +60,6 @@
   border-right: none;
 }
 
-/* Dark mode styles */
 .dark-mode {
   background-color: #121212;
   color: #ffffff;
@@ -88,9 +86,9 @@
 .horizontal-slider {
   width: 100%;
   height: 1rem;
-  background: linear-gradient(to right, #5882af, #ffffff, #5882af); /* Gradient background */
-  border-radius: 4px; /* Optional: for rounded corners */
-  position: relative; /* Ensure that child elements are positioned relative to this container */
+  background: linear-gradient(to right, #5882af, #ffffff, #5882af); 
+  border-radius: 4px; 
+  position: relative; 
   margin-top: 10px
 }
 
@@ -107,7 +105,7 @@
 }
 
 .example-track {
-  background: transparent; /* Transparent to show the gradient behind */
+  background: transparent; 
   height: 100%;
 }
 
@@ -131,9 +129,9 @@
 .mark {
   position: absolute;
   top: 0;
-  width: 2px; /* Line thickness */
+  width: 2px; 
   height: 1rem;
-  background-color: gray; /* Line color */
+  background-color: gray; 
 }
 
 .mark-text {
@@ -194,14 +192,14 @@
   right: 0;
   padding: 0.5rem;
   cursor: pointer;
-  visibility: hidden; /* Initially hidden */
+  visibility: hidden; 
 }
 
 .slider-box:hover .delete-icon {
-  visibility: visible; /* Show on hover */
+  visibility: visible; 
 }
 
-/* Additional styles */
+
 .time-box {
   display: flex;
   flex-direction: column;
