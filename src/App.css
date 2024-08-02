@@ -1,0 +1,225 @@
+/* Existing styles */
+.outer-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.inner-container {
+  width: 60%;
+  min-height: auto;
+  border: 1px solid gray;
+  margin-top: 1rem;
+}
+
+.top-box {
+  height: 3rem;
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.city-tag {
+  height: 70%;
+  width: 35%;
+  outline: none;
+}
+
+.calender {
+  height: 70%;
+  width: 20%;
+  padding: 0 0.5rem;
+  outline: none;
+}
+
+.links {
+  height: 70%;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.icon {
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon:nth-child(4) {
+  border-right: none;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .top-box {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .inner-container {
+  border-color: #333333;
+}
+
+.dark-mode .links {
+  border-color: #333333;
+}
+
+.timer-container {
+  width: 100%;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.horizontal-slider {
+  width: 100%;
+  height: 1rem;
+  background: linear-gradient(to right, #5882af, #ffffff, #5882af); /* Gradient background */
+  border-radius: 4px; /* Optional: for rounded corners */
+  position: relative; /* Ensure that child elements are positioned relative to this container */
+  margin-top: 10px
+}
+
+.example-thumb {
+  position: relative;
+  top: -2px;
+  height: 1.25rem;
+  width: 1.5rem;
+  background-color: whitesmoke;
+  border: 1px solid wheat;
+  border-radius: 3px;
+  cursor: grab;
+  outline: none;
+}
+
+.example-track {
+  background: transparent; /* Transparent to show the gradient behind */
+  height: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.slider-marks {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mark {
+  position: absolute;
+  top: 0;
+  width: 2px; /* Line thickness */
+  height: 1rem;
+  background-color: gray; /* Line color */
+}
+
+.mark-text {
+  position: absolute;
+  top: 1.25rem;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+.slider-box {
+  position: relative;
+  border: 1px solid rgb(175, 171, 171);
+  padding: 0.75rem 1rem 0 1rem;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 1rem; */
+}
+
+.sub-header > p {
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0 1rem; */
+}
+.gmt{
+ margin-left: 25%;
+}
+
+.time-div{
+  /* border: 1px solid red; */
+  margin-right: 12.5%;
+  width: 30%;
+  height: 12%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2px 0px;
+}
+
+.date-prop{
+  margin-right: 12%;
+}
+
+.title{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  visibility: hidden; /* Initially hidden */
+}
+
+.slider-box:hover .delete-icon {
+  visibility: visible; /* Show on hover */
+}
+
+/* Additional styles */
+.time-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.shareable-link {
+  position: relative;
+  margin-top:5px;
+}
+
+.link-input {
+  width: 300px;
+  height: 15px;
+  padding: 10px;
+}
+
+.copy-button {
+  padding: 2.5px;
+  cursor: pointer;
+}
