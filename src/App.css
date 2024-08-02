@@ -221,3 +221,16 @@
   padding: 2.5px;
   cursor: pointer;
 }
+
+.icon {
+  color: inherit; 
+}
+
+.icon a {
+  color: inherit;
+  text-decoration: none; 
+}
+
+.icon:hover {
+  color: inherit;
+}

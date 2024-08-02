@@ -179,7 +179,9 @@ function App() {
             />
 
             <div className='links'>
-              <div className='icon'><PiCalendarPlusLight /></div>
+              <a href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener noreferrer" className='icon'>
+                <PiCalendarPlusLight />
+              </a>
               <div className='icon' onClick={reverseArray}><LuArrowUpDown /></div>
               <div className='icon' onClick={generateShareableLink}><GrLink /></div>
               <div className='icon' onClick={toggleTheme}>
